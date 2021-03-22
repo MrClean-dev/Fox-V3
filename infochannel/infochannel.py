@@ -127,7 +127,7 @@ class InfoChannel(Cog):
         if category_id is not None and category is None:
             await ctx.maybe_send_embed("Info category has been deleted, recreate it?")
         elif category_id is None:
-            await ctx.maybe_send_embed("Enable info channels on this server?")
+            await ctx.maybe_send_embed("Enable info channels on this server? If you want to enable info channels respond with yes")
         else:
             await ctx.maybe_send_embed("Do you wish to delete current info channels?")
 
